@@ -1,7 +1,7 @@
 ##Data Types
 
 
-#string
+#-------------string-------------------#
 
 #printing string
 print("Hello")
@@ -62,7 +62,7 @@ print(txt)
 x = "Hello World"
 print(len(x))
 
-#numeric
+#-------------numeric--------------------#
 
 #integer - whole number
 x = 5
@@ -75,3 +75,17 @@ print(y)
 #complex - include imaginary numbers
 z = 2 + 3j
 print(z)
+
+
+#---------------Sequence Types-------------------#
+
+#list - ordered, changeable, allows duplicate members
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+print(len(thislist))
+print(type(thislist))
+print(thislist[1])
+
+list1 = ["abc", 34, True, 40, "male"]
+print(list1)
+
