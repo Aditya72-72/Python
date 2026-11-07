@@ -85,3 +85,6 @@ def myfunc():
 myfunc()
 print("Python is " + x)
 
+#input function
+a= input("Enter your name: ")
+print("hello " + a)
