@@ -12,7 +12,7 @@ print(b[2:7])
 
 #slicing from start
 b = "Hello, World!"
-print(b[:8])
+print(b[::8])
 
 #slicing to end
 b = "Hello, World!"
@@ -73,6 +73,16 @@ print(txt)
 x = "Hello World"
 print(len(x))
 
+print('I hope everyone is enjoying the Python Challenge.\nAre you ?') # line break
+print('Days\tTopics\tExercises') # adding tab space or 4 spaces
+print('Day 1\t5\t5')
+print('Day 2\t6\t20')
+print('Day 3\t5\t23')
+print('Day 4\t1\t35')
+print('This is a backslash  symbol (\\)') # To write a backslash
+print('In every programming language it starts with \"Hello, World!\"') # to write a double quote inside a single quote
+
+
 #-------------numeric--------------------#
 
 #integer - whole number
@@ -98,5 +108,50 @@ print(type(thislist))
 print(thislist[1])
 
 list1 = ["abc", 34, True, 40, "male"]
+
+#adding item to list
+list1.append("orange")
 print(list1)
+
+#removing item from list
+list1.remove("male")
+print(list1)
+
+#replacing item or updating item
+list1[1] = 45
+print(list1)
+
+#combining two lists
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+list3 = list1 + list2
+print(list3)
+
+#max and min value in list
+list1 = [1, 2, 3, 4, 5]
+print(max(list1))
+print(min(list1))
+
+#looping in list
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+  print(x)
+
+#looping through index numbers
+thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+  print(thislist[i])
+
+#while looping in list
+thislist = ["apple", "banana", "cherry"]
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
+  
+
+list2 = ["apple", "banana", "cherry", "apple", "cherry"]
+print(list2[::4])
+
+
 
