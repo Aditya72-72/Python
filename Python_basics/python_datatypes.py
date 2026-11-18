@@ -82,6 +82,12 @@ print('Day 4\t1\t35')
 print('This is a backslash  symbol (\\)') # To write a backslash
 print('In every programming language it starts with \"Hello, World!\"') # to write a double quote inside a single quote
 
+#placeholders
+name = "John"
+age = 36
+print("My name is %s and I am %d" % (name, age))
+
+
 
 #-------------numeric--------------------#
 
@@ -148,10 +154,36 @@ i = 0
 while i < len(thislist):
   print(thislist[i])
   i = i + 1
-  
+
 
 list2 = ["apple", "banana", "cherry", "apple", "cherry"]
 print(list2[::4])
+
+#list comprehension
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = [x for x in fruits if "a" in x]
+print(newlist)
+
+squares = [x**2 for x in range(1, 6)]
+print(squares)  # Output: [1, 4, 9, 16, 25]
+
+evens = [[x for x in range (1,21) if x%2==0]]
+print(evens)  # Output: [[2, 4, 6, 8, 10, 12, 14, 16, 18,20]]
+
+newlist = [x for x in range(10) if x < 7]
+print(newlist)  # Output: [0, 1, 2, 3, 4, 5, 6]
+
+#soritng list
+list1 = ["orange", "mango", "kiwi", "pineapple", "banana"]
+list1.sort()    
+print(list1)  
+
+list2 = [100, 50, 65, 82, 23]
+print(sorted(list2))  # Output: [23, 50, 65, 82, 100]
+
+list3 = [10,90,50, 30, 70]
+print (sorted(list3, reverse=True))  # Output: [90, 70, 50, 30, 10]
+
 
 
 
